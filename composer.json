@@ -1,0 +1,32 @@
+{
+    "name": "ll/Menull",
+    "alias": "创建自定义菜单",
+    "description": "用于创建多级菜单",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/duolabmeng6/Menull",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "多啦b梦",
+            "email": "1715109585@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ll\\Menull\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Ll\\Menull\\MenullServiceProvider",
+        "laravel": {
+            "providers": [
+                "Ll\\Menull\\MenullServiceProvider"
+            ]
+        }
+    }
+}
